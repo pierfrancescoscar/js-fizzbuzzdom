@@ -8,21 +8,24 @@ const fizzBoxes = document.querySelector('.fizzBoxes');
 
 for (let i=1; i <= 100; i++) {
 
-    fizzBoxes.innerHTML += `<div class="fizzBox fizzBox-${i}">${i}</div>`;
-
     // Diversi stili per multipli di 5 e 3, multipli di 3, multipli di 5
 
+    // Styling se è sia multiplo di 3 e sia multiplo di 5
     if (i % 3 == 0 && i % 5 == 0) {
-        fizzBoxes.innerHTML = `<div class="fizzBox fizzBox-${i} fizzbuzz">fizzbuzz</div>`;
+        fizzBoxes.innerHTML += `<div class="fizzBox fizzBox-${i} fizzbuzz">fizzbuzz</div>`;
     }
-
+    // Styling se è multiplo di 3
     else if (i % 3 == 0) {
-        fizzBoxes.innerHTML = `<div class="fizzBox fizzBox-${i} fizz">fizz</div>`;
+        fizzBoxes.innerHTML += `<div class="fizzBox fizzBox-${i} fizz">fizz</div>`;
         }
-
-    else if(i % 5 == 0) {
-        fizzBoxes.innerHTML = `<div class="fizzBox fizzBox-${i} buzz">buzz</div>`;
+    // Styling se è multiplo di 5
+    else if (i % 5 == 0) {
+        fizzBoxes.innerHTML += `<div class="fizzBox fizzBox-${i} buzz">buzz</div>`;
         }
+    // Styling se non è nè multiplo di 3, nè multiplo di 5, nè multiplo di entrambi
+    else {
+        fizzBoxes.innerHTML += `<div class="fizzBox fizzBox-${i} defaultBox">${i}</div>`;
+    }
 }
 
    

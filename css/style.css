@@ -30,17 +30,20 @@ h1 {
     width: 70px;
     height: 70px;
     margin: 1rem;
-    background-color: #1589b2;
+    
 }
 
+.defaultBox {
+    background-color: #1589b2;
+}
 .fizz {
-    background: #0cd6a1;
+    background-color: #0cd6a1;
 }
 
 .buzz {
-    background: #ffd266;
+    background-color: #ffd266;
 }
 
 .fizzbuzz {
-    background: #f0466f;
+    background-color: #f0466f;
 }
