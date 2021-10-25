@@ -1,3 +1,34 @@
+/* General Styles */
+
 * {
     font-family: sans-serif;
+}
+
+body {
+    background-color: #093b4c;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+/* FizzBuzz Boxes */
+
+.fizzBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: 20px auto;
+}
+
+.fizzBoxes .fizzBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: 1rem;
+    background-color: #1589b2;
 }
