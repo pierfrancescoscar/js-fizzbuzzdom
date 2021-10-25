@@ -32,3 +32,16 @@ h1 {
     margin: 1rem;
     background-color: #1589b2;
 }
+
+.fizz {
+    background: #0cd6a1;
+}
+
+.buzz {
+    background: #ffd266;
+
+}
+
+.fizzbuzz {
+    background: #f0466f;
+}
